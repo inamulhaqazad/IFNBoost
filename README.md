@@ -5,7 +5,7 @@ This repository contains the code accompanying the paper [**"IFNBoost: An interp
 ## Installation
 
 1. Install [Anaconda](https://www.anaconda.com/products/distribution)
-2. Create a virtual environment (example name: IFNBoost) with Python 3.8.12 using "conda create --name IFNBoost python=3.8.12"
+2. Create a virtual environment (example name: IFNBoost) with Python 3.11.8 using "conda create --name IFNBoost python=3.11.8"
 3. Within the environment install the dependencies provided in file "requirements.txt" using "pip install -r requirements.txt"
 
 ## Web application
