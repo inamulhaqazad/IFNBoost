@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Nov 19 10:42:18 2023
 
 @author: iuaa
 """
@@ -157,14 +156,11 @@ model = xgb.XGBClassifier( #
 
 model.fit(train_set, label)
 
-lapsed_time = time.time() - start_time
-
 from sklearn.metrics import accuracy_score, matthews_corrcoef, f1_score, confusion_matrix
 
 y_pred = model.predict(test_set)
 
 evaluate_model(label_test, y_pred) # from functions
-
 
 
 #%% bootstrapping

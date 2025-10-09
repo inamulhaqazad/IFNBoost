@@ -105,8 +105,8 @@ def sort_amino(df):
 
 def sort_host(df):
     cols = ['Epitope - Name', 'Host - Name']
-    df_p = df[df['Label'] == 1]
-    df_n = df[df['Label'] == 0]
+    df_p = df.loc[df['Label'] == 1].copy()
+    df_n = df.loc[df['Label'] == 0].copy()
 
     df_p.loc[:, 'nc'] = df_p.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
     df_n.loc[:, 'nc'] = df_n.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
@@ -120,8 +120,8 @@ def sort_host(df):
 
 def sort_specie(df):
     cols = ['Epitope - Name', 'Epitope - Species']
-    df_p = df[df['Label'] == 1]
-    df_n = df[df['Label'] == 0]
+    df_p = df.loc[df['Label'] == 1].copy()
+    df_n = df.loc[df['Label'] == 0].copy()
 
     df_p.loc[:, 'nc'] = df_p.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
     df_n.loc[:, 'nc'] = df_n.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
@@ -151,8 +151,8 @@ def sort_assay(df):
 def sort_check(df):
     cols = ['Epitope - Name', 'Epitope ID', 'Epitope - Species', 'Host - Name']
     # cols = ['Epitope - Name', 'Epitope ID', 'Epitope - Species', 'Host Species']
-    df_p = df[df['Label'] == 1]
-    df_n = df[df['Label'] == 0]
+    df_p = df.loc[df['Label'] == 1].copy()
+    df_n = df.loc[df['Label'] == 0].copy()
 
     df_p.loc[:, 'nc'] = df_p.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
     df_n.loc[:, 'nc'] = df_n.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
@@ -167,8 +167,8 @@ def sort_check(df):
 def sort_assayhost(df):
     cols = ['Epitope - Name', 'Epitope ID', 'Assay - Method', 'Host - Name']
     # cols = ['Epitope - Name', 'Epitope ID', 'Epitope - Species', 'Host Species']
-    df_p = df[df['Label'] == 1]
-    df_n = df[df['Label'] == 0]
+    df_p = df.loc[df['Label'] == 1].copy()
+    df_n = df.loc[df['Label'] == 0].copy()
 
     df_p.loc[:, 'nc'] = df_p.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
     df_n.loc[:, 'nc'] = df_n.apply(lambda x: ''.join(str(i) for i in x[cols]), 1)
