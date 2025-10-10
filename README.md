@@ -8,7 +8,7 @@ This repository contains the code accompanying the paper [**"IFNBoost: An interp
 2. Create a virtual environment (example name: IFNBoost) with Python 3.11.8 using "conda create --name IFNBoost python=3.11.8"
 3. Within the environment install the dependencies provided in file "requirements.txt" using "pip install -r requirements.txt"
 4. The main code is in *MODEL.py* file and it uses the *allhost.xlsx* file as input and processes it. Make sure the input file is in the same folder, else specify the path to file in the script. The *functions.py* also needs to be in the same folder as *MODEL.py*.
-5. The figures showing the performance of IFNBoost using 1000 bootsraps are in *Figures.py*.
+5. The figures showing the performance of IFNBoost using 1000 bootsraps are generated in *Figures.py*.
 6. Comparisons with other methods are in *Validation.py*, which utlises the 2024 data from IEDB contained in *Tcell2024.xlsx* 
 
 ## Web application
